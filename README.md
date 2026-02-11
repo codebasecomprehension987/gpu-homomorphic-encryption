@@ -2,20 +2,6 @@
 
 A high-performance CUDA implementation of Fully Homomorphic Encryption supporting computation on encrypted data without decryption.
 
-## 🔥 Why This is Extreme
-
-This library tackles one of the most computationally intensive cryptographic schemes ever devised:
-
-- **Custom 256-bit Arithmetic**: GPUs are designed for 32-bit floats. We implement multi-precision integer arithmetic using PTX assembly
-- **Number Theoretic Transform (NTT)**: Adapted FFT to work over finite fields with brutal memory access patterns
-- **Bootstrapping**: The "holy grail" operation that refreshes noise—requires thousands of NTT operations perfectly pipelined
-- **Residue Number System (RNS)**: Handling moduli that exceed native GPU integer sizes
-
-### Performance Targets
-- **Encryption**: < 10ms per ciphertext (polynomial degree 8192)
-- **Multiplication**: < 50ms (with relinearization)
-- **NTT Transform**: < 2ms for N=8192
-- **Bootstrapping**: < 500ms (the nightmare operation)
 
 ---
 
