@@ -338,15 +338,3 @@ For λ-bit security:
 MIT License - See LICENSE file for details
 
 ---
-
-## 🤝 Contributing
-
-This is an extreme research implementation. Contributions welcome for:
-- Bootstrapping optimizations
-- Additional FHE schemes (CKKS, TFHE)
-- Multi-GPU support
-- Formal security audits
-
----
-
-**Built with 🔥 on CUDA for the cryptographic nightmare that is FHE**
